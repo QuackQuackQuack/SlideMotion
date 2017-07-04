@@ -1,0 +1,174 @@
+<html>
+<head>
+  <title>Custom template using Handlebars</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="css/index.css" rel="stylesheet"></head>
+<body>
+  <div class="wrap">
+    <h1 class="title">SLIDE</h1>
+    <h2 class="subtitle">A type of <strong>Slide</strong></h2>
+    <div class="box">
+      <div class="slider" data-container="slider1">
+        <div class="inner_box" data-slide="wrapper">
+          <div class="banner_content">
+            <ul class="banner_list" data-slide="list">
+              <li>
+                <a href="" class="thum"><div class="slide red"><span>1</span></div></a>
+              </li>
+              <li>
+                <a href="" class="thum"><div class="slide blue"><span>2</span></div></a>
+              </li>
+              <li>
+                <a href="" class="thum"><div class="slide yellow"><span>3</span></div></a>
+              </li>
+              <li>
+                <a href="" class="thum"><div class="slide gray"><span>4</span></div></a>
+              </li>
+            </ul>
+          </div>
+          <div class="pager-wrap" data-slide="pagination">
+            <ol class="pager-inner">
+              <li class="pager-item on" data-slide="page">1</li>
+              <li class="pager-item" data-slide="page">2</li>
+              <li class="pager-item" data-slide="page">3</li>
+              <li class="pager-item" data-slide="page">4</li>
+            </ol>
+          </div>
+          <a class="arrow left" data-type="prev" data-slide-arrow="PREV" style="display: none;">
+            <span class="fa fa-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+          <a class="arrow right" data-type="next" data-slide-arrow="NEXT" style="display: none;">
+            <span class="fa fa-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Right</span>
+          </a>
+        </div>
+      </div>
+      <div class="code">
+<pre>
+  <code class="javascript">
+  const slider1 = new SlideMotion('[data-container=slider1]', {
+    initialDisplayCount: 1,
+    viewCount: 1,
+    effectType: 'SLIDE',
+    pagination: true,
+    playofout: true,
+    autoPlay: true,
+  });
+  </code>
+</pre>
+      </div>
+    </div>
+    <h1 class="title">FADE</h1>
+    <h2 class="subtitle">A type of <strong>Fade</strong></h2>
+    <div class="box">
+      <div class="slider" data-container="slider2">
+        <div class="inner_box" data-slide="wrapper">
+          <div class="banner_content">
+            <ul class="banner_list" data-slide="list">
+              <li>
+                <a href="" class="thum"><div class="slide red"><span>1</span></div></a>
+              </li>
+              <li>
+                <a href="" class="thum"><div class="slide blue"><span>2</span></div></a>
+              </li>
+              <li>
+                <a href="" class="thum"><div class="slide yellow"><span>3</span></div></a>
+              </li>
+              <li>
+                <a href="" class="thum"><div class="slide orange"><span>4</span></div></a>
+              </li>
+              <li>
+                <a href="" class="thum"><div class="slide green"><span>5</span></div></a>
+              </li>
+              <li>
+                <a href="" class="thum"><div class="slide gray"><span>6</span></div></a>
+              </li>
+            </ul>
+          </div>
+        
+          <a class="arrow left" data-type="prev" data-slide-arrow="PREV" style="display: none;">
+            <span class="fa fa-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+          <a class="arrow right" data-type="next" data-slide-arrow="NEXT" style="display: none;">
+            <span class="fa fa-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Right</span>
+          </a>
+        </div>
+      </div>
+      <div class="code">
+<pre>
+  <code class="javascript">
+  const slider2 = new SlideMotion('[data-container=slider2]', {
+    initialDisplayCount: 2,
+    viewCount: 2,
+    effectType: 'FADE',
+    pagination: true,
+    playofout: false,
+    autoPlay: false,
+  });
+  </code>
+</pre>
+      </div>
+    </div>
+    <h1 class="title">GALLERY</h1>
+    <h2 class="subtitle">A type of <strong>GALLERY</strong></h2>
+    <div class="box">
+      <div class="slider gallery" data-container="slider3">
+        <div class="big-image" data-slide="bigImage">
+          <li><div class="slide red"><span>1</span></div></li>
+          <li><div class="slide blue"><span>2</span></div></li>
+          <li><div class="slide yellow"><span>3</span></div></li>
+          <li><div class="slide green"><span>4</span></div></li>
+          <li><div class="slide gray"><span>5</span></div></li>
+        </div>        <div class="inner_box" data-slide="wrapper">
+          <div class="banner_content">
+            <ul class="banner_list" data-slide="list">
+              <li>
+                <a href="" class="thum"><div class="slide red"><span>1</span></div></a>
+              </li>
+              <li>
+                <a href="" class="thum"><div class="slide blue"><span>2</span></div></a>
+              </li>
+              <li>
+                <a href="" class="thum"><div class="slide yellow"><span>3</span></div></a>
+              </li>
+              <li>
+                <a href="" class="thum"><div class="slide green"><span>4</span></div></a>
+              </li>
+              <li>
+                <a href="" class="thum"><div class="slide gray"><span>5</span></div></a>
+              </li>
+            </ul>
+          </div>
+        
+          <a class="arrow left" data-type="prev" data-slide-arrow="PREV" style="display: none;">
+            <span class="fa fa-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+          <a class="arrow right" data-type="next" data-slide-arrow="NEXT" style="display: none;">
+            <span class="fa fa-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Right</span>
+          </a>
+        </div>
+      </div>
+      <div class="code">
+<pre>
+  <code class="javascript">
+  const slider3 = new SlideMotion('[data-container=slider3]', {
+    initialDisplayCount: 3,
+    viewCount: 1,
+    effectType: 'GALLERY',
+    playofout: false,
+    autoPlay: false,
+  });
+  </code>
+</pre>
+      </div>
+    </div>
+  </div>
+<script type="text/javascript" src="bundle.js"></script></body>
+</html>

@@ -1,0 +1,75 @@
+<html>
+<head>
+  <title>{{htmlWebpackPlugin.options.title}}</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="wrap">
+    <h1 class="title">SLIDE</h1>
+    <h2 class="subtitle">A type of <strong>Slide</strong></h2>
+    <div class="box">
+      <div class="slider" data-container="slider1">
+        {{> partials/slider_type1 }}
+      </div>
+      <div class="code">
+<pre>
+  <code class="javascript">
+  const slider1 = new SlideMotion('[data-container=slider1]', {
+    initialDisplayCount: 1,
+    viewCount: 1,
+    effectType: 'SLIDE',
+    pagination: true,
+    playofout: true,
+    autoPlay: true,
+  });
+  </code>
+</pre>
+      </div>
+    </div>
+    <h1 class="title">FADE</h1>
+    <h2 class="subtitle">A type of <strong>Fade</strong></h2>
+    <div class="box">
+      <div class="slider" data-container="slider2">
+        {{> partials/slider_type2 }}
+      </div>
+      <div class="code">
+<pre>
+  <code class="javascript">
+  const slider2 = new SlideMotion('[data-container=slider2]', {
+    initialDisplayCount: 2,
+    viewCount: 2,
+    effectType: 'FADE',
+    pagination: true,
+    playofout: false,
+    autoPlay: false,
+  });
+  </code>
+</pre>
+      </div>
+    </div>
+    <h1 class="title">GALLERY</h1>
+    <h2 class="subtitle">A type of <strong>GALLERY</strong></h2>
+    <div class="box">
+      <div class="slider gallery" data-container="slider3">
+        {{> partials/gallery }}
+        {{> partials/slider_type3 }}
+      </div>
+      <div class="code">
+<pre>
+  <code class="javascript">
+  const slider3 = new SlideMotion('[data-container=slider3]', {
+    initialDisplayCount: 3,
+    viewCount: 1,
+    effectType: 'GALLERY',
+    playofout: false,
+    autoPlay: false,
+  });
+  </code>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
